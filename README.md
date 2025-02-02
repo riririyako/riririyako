@@ -1,5 +1,12 @@
 ## Hi there 👋
 
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=riririyako&show_icons=true&locale=jp&layout=compact&theme=chartreuse-dark" alt="ovi" /></p>
+
+<img src="https://github-readme-stats.vercel.app/api?username=riririyako&show_icons=true&locale=jp&theme=chartreuse-dark" alt="ovi" width="410" /></p>
+
+
+<img src="https://github-profile-trophy.vercel.app/?username=riririyako&theme=juicyfresh&no-bg=true" />
+
 <!--
 **riririyako/riririyako** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
