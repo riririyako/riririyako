@@ -1,8 +1,8 @@
 ## Hi there 👋
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=riririyako&show_icons=true&locale=jp&layout=compact&theme=chartreuse-dark" alt="ovi" /></p>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=riririyako&show_icons=true&locale=en&layout=compact&theme=merko" alt="ovi" /></p>
 
-<img src="https://github-readme-stats.vercel.app/api?username=riririyako&show_icons=true&locale=jp&theme=chartreuse-dark" alt="ovi" width="410" /></p>
+<img src="https://github-readme-stats.vercel.app/api?username=riririyako&show_icons=true&locale=en&theme=merko" alt="ovi" width="410" /></p>
 
 
 <img src="https://github-profile-trophy.vercel.app/?username=riririyako&theme=juicyfresh&no-bg=true" />
