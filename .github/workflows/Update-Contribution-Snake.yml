@@ -1,0 +1,40 @@
+name: Update Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 毎日午前0時に実行
+  workflow_dispatch:  # 手動実行も可能
+  push:
+    branches:
+      - main  # mainブランチへのプッシュ時も実行
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 必要な権限
+
+    steps:
+      # リポジトリのチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # ヘビアニメーション生成
+      - name: Generate GitHub Contribution Snake Animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}  # GitHubユーザー名
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark  # ダークテーマのSVGも生成
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # トークン設定
+
+      # アニメーションの保存先ブランチにプッシュ
+      - name: Push to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output  # 出力先ブランチ
+          build_dir: dist  # 出力ディレクトリ
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # トークン設定
