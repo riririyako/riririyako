@@ -1,0 +1,37 @@
+name: Update Profile Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 毎日午前0時に実行
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  update-profile-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up GitHub token
+        run: echo "GITHUB_TOKEN=${{ secrets.GH_PAT }}" >> $GITHUB_ENV
+
+      # 📌 GitHub Profile Summary Cards の更新
+      - name: Generate GitHub Profile Summary Cards
+        run: |
+          curl -s https://raw.githubusercontent.com/vn7n24fzkq/github-profile-summary-cards/master/profile-summary-card-output/update.sh | bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      # 📌 GitHub Readme Streak Stats の更新
+      - name: Update GitHub Readme Streak Stats
+        run: |
+          curl -s https://raw.githubusercontent.com/denvercoder1/github-readme-streak-stats/master/streak-stats.sh | bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      # 📌 GitHub Profile Trophy の更新
+      - name: Update GitHub Profile Trophy
+        run: |
+          curl -s https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/master/trophy.sh | bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
