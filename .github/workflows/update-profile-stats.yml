@@ -23,11 +23,3 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # トークン設定
-
-      # 📌 GitHub Readme Streak Stats の更新
-      - name: Update GitHub Readme Streak Stats
-        uses: denvercoder1/github-readme-streak-stats@v1.5.0
-        with:
-          user: ${{ github.repository_owner }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # トークン設定
