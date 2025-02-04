@@ -19,7 +19,7 @@
 <!--h2 without bottom border-->
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h2 style="display: inline-block">Just the Beginning </h2></summary>
+    <summary><h2 style="display: inline-block">🎉 Just the Beginning 🎉</h2></summary>
   </ul>
 </div>
 
@@ -65,14 +65,14 @@
 <tr border="none">
 <td width="50%" align="center">
   
-  <img  align="center"  src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=riririyako&theme=aura" />
+  <img  align="center"  src="https://raw.githubusercontent.com/riririyako/riririyako/main/profile-summary-card-output/aura/3-stats.svg" />
   <br></br>
   <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=riririyako&theme=dark&hide_border=false" /> 
 </td>
 
 <td width="50%" align="center">
 
-  <img  align="center"  src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=riririyako&theme=algolia"/>
+  <img  align="center"  src="https://raw.githubusercontent.com/riririyako/riririyako/main/profile-summary-card-output/algolia/2-most-commit-language.svg"/>
   
   </td>
 </tr>
@@ -80,11 +80,13 @@
 <!--- stats (end) -->
 
 <!--- trophy (start) -->
+<!---
 <div align=center>
   <a href="https://github.com/ryo-ma/github-profile-trophy" title="Go to Source">
       <img align="center" width=84% src="https://github-profile-trophy.vercel.app/?username=riririyako&theme=chalk&row=1&column=7&margin-h=15&margin-w=5&no-bg=true" alt="TROPHY" />
     </a>
 </div>
+--->
 <!--- trophy (start) -->
 
 
@@ -95,7 +97,7 @@
 <!--h1 without bottom border-->
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h2 style="display: inline-block">Technologies That I Know👨🏻‍💻</h2></summary>
+    <summary><h2 style="display: inline-block">💻 Technologies I Have Experience With 💻</h2></summary>
   </ul>
 </div>
 <!--tech stack icons-->
@@ -136,8 +138,3 @@
 
 <!--horizontal divider(gradiant)-->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-----------------------------------------------------------------------
-Last Edited on: 2/2/2025
-
-template: [1010nishant](https://github.com/1010nishant)
