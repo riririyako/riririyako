@@ -26,7 +26,7 @@ jobs:
 
       # 📌 GitHub Readme Streak Stats の更新
       - name: Update GitHub Readme Streak Stats
-        uses: denvercoder1/github-readme-streak-stats@v1
+        uses: denvercoder1/github-readme-streak-stats@v1.5.0
         with:
           user: ${{ github.repository_owner }}
         env:
@@ -34,7 +34,7 @@ jobs:
 
       # 📌 GitHub Profile Trophy の更新
       - name: Update GitHub Profile Trophy
-        uses: ryo-ma/github-profile-trophy@v1
+        uses: ryo-ma/github-profile-trophy@v1.5.0
         with:
           username: ${{ github.repository_owner }}
         env:
